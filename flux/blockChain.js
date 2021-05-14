@@ -1,4 +1,4 @@
-import cryptoBlock from './cryptoBlock';
+const {cryptoBlock} = require('./cryptoBlock');
 
 class cryptoBlockChain {
     constructor () {
@@ -16,8 +16,15 @@ class cryptoBlockChain {
     addNewBlock (newBlock) {
         if (newBlock) {
             newBlock["preceedingHash"] = this.obtainLatestBlock().hash;
+            newBlock["hash"] = newBlock.computeHash();
+            this.blockChain.push(newBlock)
         } else {
             console.log("No data found for adding new block");
         }
     }
+}
+
+
+module.exports = {
+    cryptoBlockChain
 }

@@ -4,7 +4,7 @@
   "description": "A POC of blockchain made using nodeJs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Running test file\" && node test.js"
   },
   "repository": {
     "type": "git",

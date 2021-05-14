@@ -18,4 +18,6 @@ class cryptoBlock {
     }
 }
 
-export default cryptoBlock;
+module.exports = {
+    cryptoBlock
+}
