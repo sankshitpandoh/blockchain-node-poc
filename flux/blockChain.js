@@ -3,7 +3,7 @@ const {cryptoBlock} = require('./cryptoBlock');
 class cryptoBlockChain {
     constructor () {
         this.blockChain = [this.initializeFirstBlock()];
-        this.difficulty = 5;
+        this.difficulty = 3;
     }
 
     initializeFirstBlock () {

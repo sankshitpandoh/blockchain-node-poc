@@ -1,4 +1,4 @@
-// This ia test file written to check basic functionality of our bloack chain
+// This is test file written to check basic functionality of our bloack chain
 
 const {cryptoBlock} = require( './flux/cryptoBlock');
 const {cryptoBlockChain} = require( './flux/blockChain');
@@ -29,6 +29,30 @@ setTimeout(() => {
                 sender: "Rick Sanchez",
                 rececipent: "Rick Sanchez",
                 quantity: 420
+            }
+        )
+    )
+
+    echoCoin.addNewBlock (
+        new cryptoBlock (
+            3 ,
+            Date.now(),
+            {
+                sender: "Rick Sanchez",
+                rececipent: "Morty Sanchez",
+                quantity: 143
+            }
+        )
+    )
+
+    echoCoin.addNewBlock (
+        new cryptoBlock (
+            4 ,
+            Date.now(),
+            {
+                sender: "Morty Sanchez",
+                rececipent: "Poopy Butthole",
+                quantity: 1111
             }
         )
     )
