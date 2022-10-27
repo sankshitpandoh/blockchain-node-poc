@@ -1,4 +1,4 @@
-// This ia test file written to check basic functionality of our bloack chain
+// This is test file written to check basic functionality of our bloack chain
 
 const {cryptoBlock} = require( './flux/cryptoBlock');
 const {cryptoBlockChain} = require( './flux/blockChain');
